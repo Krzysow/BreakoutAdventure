@@ -1,0 +1,445 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "BreakoutAdventure Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Debug",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Debug",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventure Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Debug",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"DebugGame",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"DebugGame",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventure Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"DebugGame",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Development",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Development",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventure Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Development",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Shipping",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Shipping",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventure Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Shipping",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Test",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Test",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventure Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventure Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventure",
+				"Mac",
+				"Test",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"Debug",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"Debug",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventureEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"Debug",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventureEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"Development",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"Development",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"BreakoutAdventureEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		},
+		{
+			"label": "BreakoutAdventureEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"BreakoutAdventureEditor",
+				"Mac",
+				"Development",
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.26"
+			}
+		}
+	]
+}

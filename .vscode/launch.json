@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "BreakoutAdventure (Debug)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventure Mac Debug Build",
+			"program": "/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "BreakoutAdventure (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventure Mac DebugGame Build",
+			"program": "/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "BreakoutAdventure (Development)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventure Mac Development Build",
+			"program": "/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "BreakoutAdventure (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventure Mac Shipping Build",
+			"program": "/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "BreakoutAdventure (Test)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventure Mac Test Build",
+			"program": "/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "BreakoutAdventureEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventureEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "BreakoutAdventureEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventureEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "BreakoutAdventureEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "BreakoutAdventureEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.26",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/krzysow/Desktop/UnrealEngine/BreakoutAdventure/BreakoutAdventure.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.26"
+		}
+	]
+}
