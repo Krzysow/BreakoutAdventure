@@ -1,10 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-#include "Engine/World.h"
-#include "GameFramework/PlayerController.h"
 #include "OpenDoor.h"
+#include "Engine/World.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/PlayerController.h"
 
 // Sets default values for this component's properties
 UOpenDoor::UOpenDoor()
@@ -12,10 +11,7 @@ UOpenDoor::UOpenDoor()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
 }
-
 
 // Called when the game starts
 void UOpenDoor::BeginPlay()
@@ -25,6 +21,11 @@ void UOpenDoor::BeginPlay()
 	InitialYaw = GetOwner()->GetActorRotation().Yaw;
 	CurrentYaw = InitialYaw;
 	OpenAngle += InitialYaw;
+
+	if(!PressurePlate)
+	{
+		UE_LOG(LogTemp, Error, TEXT("No pressure plate set on: %s"), *GetOwner()->GetName())
+	}
 
 	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
 }
